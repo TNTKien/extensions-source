@@ -1,0 +1,123 @@
+name: Publish MatoDex extension repo
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/publish_matodex_repo.yml"
+      - "src/vi/matodex/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    name: Publish MatoDex extension repo
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Java
+        uses: actions/setup-java@be666c2fcd27ec809703dec50e508c2fdc7f6654 # v5.2.0
+        with:
+          java-version: 17
+          distribution: temurin
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@0723195856401067f7a2779048b490ace7a47d7c # v5.0.2
+        with:
+          cache-read-only: false
+
+      - name: Prepare signing key
+        env:
+          SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
+        run: |
+          test -n "$SIGNING_KEY" || { echo "::error::Missing SIGNING_KEY secret"; exit 1; }
+          printf '%s' "$SIGNING_KEY" | base64 -d > signingkey.jks
+          test -s signingkey.jks
+
+      - name: Build release APK
+        env:
+          ALIAS: ${{ secrets.ALIAS }}
+          KEY_STORE_PASSWORD: ${{ secrets.KEY_STORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: |
+          test -n "$ALIAS" || { echo "::error::Missing ALIAS secret"; exit 1; }
+          test -n "$KEY_STORE_PASSWORD" || { echo "::error::Missing KEY_STORE_PASSWORD secret"; exit 1; }
+          test -n "$KEY_PASSWORD" || { echo "::error::Missing KEY_PASSWORD secret"; exit 1; }
+          ./gradlew :src:vi:matodex:assembleRelease --stacktrace
+
+      - name: Create extension repo files
+        env:
+          ALIAS: ${{ secrets.ALIAS }}
+          KEY_STORE_PASSWORD: ${{ secrets.KEY_STORE_PASSWORD }}
+        run: |
+          mkdir -p repo/apk
+          cp src/vi/matodex/build/outputs/apk/release/*.apk repo/apk/
+          for apk in repo/apk/*-release.apk; do
+            mv "$apk" "${apk/-release.apk/.apk}"
+          done
+
+          INSPECTOR_LINK="$(curl -fsSL "https://api.github.com/repos/keiyoushi/extensions-inspector/releases/latest" | jq -r '.assets[0].browser_download_url')"
+          curl -fsSL "$INSPECTOR_LINK" -o ./Inspector.jar
+          java -jar ./Inspector.jar "repo/apk" "output.json" "tmp"
+          python ./.github/scripts/create-repo.py
+
+          FINGERPRINT="$(keytool -list -v -keystore signingkey.jks -storepass "$KEY_STORE_PASSWORD" -alias "$ALIAS" | awk '/SHA256:/{print $2; exit}' | tr -d ':' | tr '[:upper:]' '[:lower:]')"
+          test -n "$FINGERPRINT"
+          printf '{"meta":{"name":"MatoDex","website":"https://mato.suicaodex.com","signingKeyFingerprint":"%s"}}\n' "$FINGERPRINT" > repo/repo.json
+
+          cat > repo/index.html <<'EOF'
+          <!DOCTYPE html>
+          <html>
+          <head>
+          <meta charset="UTF-8">
+          <title>MatoDex extensions</title>
+          </head>
+          <body>
+          <pre>
+          <a href="index.min.json">index.min.json</a>
+          </pre>
+          </body>
+          </html>
+          EOF
+
+      - name: Upload repo artifact
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: matodex-extension-repo
+          path: repo/**
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Publish repo branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          TMP_REPO="$(mktemp -d)"
+          cp -R repo/. "$TMP_REPO/"
+
+          git switch --orphan repo-publish
+          git rm -rf . || true
+          cp -R "$TMP_REPO/." .
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No repo changes to publish"
+          else
+            git commit -m "Update MatoDex extension repo"
+            git push origin HEAD:repo --force
+          fi
