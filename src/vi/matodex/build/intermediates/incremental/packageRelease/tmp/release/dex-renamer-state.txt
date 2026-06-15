@@ -1,0 +1,4 @@
+#Mon Jun 15 20:35:14 UTC 2026
+base.0=/home/runner/work/extensions-source/extensions-source/src/vi/matodex/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

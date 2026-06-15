@@ -1,0 +1,8 @@
+eu.kanade.tachiyomi.extension.matodex-pngs-0 /home/runner/work/extensions-source/extensions-source/src/vi/matodex/build/generated/res/pngs/release
+eu.kanade.tachiyomi.extension.matodex-updated_navigation_xml-1 /home/runner/work/extensions-source/extensions-source/src/vi/matodex/build/generated/updated_navigation_xml/release
+eu.kanade.tachiyomi.extension.matodex-packageReleaseResources-2 /home/runner/work/extensions-source/extensions-source/src/vi/matodex/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+eu.kanade.tachiyomi.extension.matodex-packageReleaseResources-3 /home/runner/work/extensions-source/extensions-source/src/vi/matodex/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+eu.kanade.tachiyomi.extension.matodex-release-4 /home/runner/work/extensions-source/extensions-source/src/vi/matodex/build/intermediates/merged_res/release/mergeReleaseResources
+eu.kanade.tachiyomi.extension.matodex-matodex-5 /home/runner/work/extensions-source/extensions-source/src/vi/matodex/res
+eu.kanade.tachiyomi.extension.matodex-release-6 /home/runner/work/extensions-source/extensions-source/src/vi/matodex/src/release/res
+gradleHome-0 /home/runner/.gradle

@@ -1,0 +1,416 @@
+# compiler: R8
+# compiler_version: 9.2.14
+# min_api: 21
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.2"}
+# pg_map_id: 2a76b39e896d4bc8549a65a621ab82aee72734206a2d9d89a429d432b53637cc
+# pg_map_hash: SHA-256 2a76b39e896d4bc8549a65a621ab82aee72734206a2d9d89a429d432b53637cc
+eu.kanade.tachiyomi.extension.vi.matodex.DtoKt -> b:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    java.text.SimpleDateFormat dateFormat -> a
+    1:9:void <clinit>():69:69 -> <clinit>
+    10:18:void <clinit>():70:70 -> <clinit>
+    19:21:void <clinit>():69:69 -> <clinit>
+    1:3:java.text.SimpleDateFormat access$getDateFormat$p():1:1 -> a
+eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterDto -> e:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterDto$Companion Companion -> Companion
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Ld;"}
+    java.lang.String id -> a
+    java.lang.String title -> b
+    double number -> c
+    java.lang.String publishedAt -> d
+    1:9:void <clinit>():0:0 -> <clinit>
+    1:1:void <init>(int,java.lang.String,java.lang.String,double,java.lang.String,kotlinx.serialization.internal.SerializationConstructorMarker):45:45 -> <init>
+    1:6:eu.kanade.tachiyomi.source.model.SChapter toSChapter():52:52 -> a
+    7:11:eu.kanade.tachiyomi.source.model.SChapter toSChapter():53:53 -> a
+    12:16:eu.kanade.tachiyomi.source.model.SChapter toSChapter():54:54 -> a
+    17:22:eu.kanade.tachiyomi.source.model.SChapter toSChapter():55:55 -> a
+    23:36:eu.kanade.tachiyomi.source.model.SChapter toSChapter():56:56 -> a
+    2:25:void write$Self$matodex(eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterDto,kotlinx.serialization.encoding.CompositeEncoder,kotlinx.serialization.descriptors.SerialDescriptor):45:45 -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Le;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V"}
+eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterDto$$serializer -> c:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterDto$$serializer INSTANCE -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lc;"}
+    8:39:void <clinit>():45:45 -> <clinit>
+    1:4:void <init>():45:45 -> <init>
+    4:129:eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterDto deserialize(kotlinx.serialization.encoding.Decoder):45:45 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lkotlinx/serialization/encoding/Decoder;)Le;"}
+    7:19:void serialize(kotlinx.serialization.encoding.Encoder,eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterDto):45:45 -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lkotlinx/serialization/encoding/Encoder;Le;)V"}
+    2:20:kotlinx.serialization.KSerializer[] childSerializers():45:45 -> childSerializers
+    1:5:java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder):45:45 -> deserialize
+    1:3:kotlinx.serialization.descriptors.SerialDescriptor getDescriptor():0:0 -> getDescriptor
+    1:6:void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object):45:45 -> serialize
+    1:5:kotlinx.serialization.KSerializer[] typeParametersSerializers():45:45 -> typeParametersSerializers
+eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterDto$Companion -> d:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    1:4:void <init>(kotlin.jvm.internal.DefaultConstructorMarker):0:0 -> <init>
+    5:5:void <init>():45:45 -> <init>
+    1:3:kotlinx.serialization.KSerializer serializer():45:45 -> serializer
+eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterPayloadDto -> i:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterPayloadDto$Companion Companion -> Companion
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lh;"}
+    java.util.List pages -> a
+    kotlin.Lazy[] $childSerializers -> b
+    9:28:void <clinit>():60:60 -> <clinit>
+    6:20:void <init>(int,java.util.List,kotlinx.serialization.internal.SerializationConstructorMarker):60:60 -> <init>
+    1:5:kotlinx.serialization.KSerializer MatoChapterPayloadDto.$r8$lambda$e76Ufcsp6_Jc9VZzjNkUk6PpOUA():0:0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:8:kotlinx.serialization.KSerializer MatoChapterPayloadDto._childSerializers$_anonymous_():0:0 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:3:kotlin.Lazy[] access$get$childSerializers$cp():60:60 -> c
+    1:2:java.util.List toPages():64:64 -> d
+    3:13:java.util.List toPages():73:73 -> d
+    14:33:java.util.List toPages():75:75 -> d
+    34:39:java.util.List toPages():76:76 -> d
+    40:49:java.util.List toPages():65:65 -> d
+    50:55:java.util.List toPages():76:76 -> d
+    1:17:void write$Self$matodex(eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterPayloadDto,kotlinx.serialization.encoding.CompositeEncoder,kotlinx.serialization.descriptors.SerialDescriptor):60:60 -> e
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Li;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V"}
+eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterPayloadDto$$ExternalSyntheticLambda0 -> f:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    1:4:void MatoChapterPayloadDto$$ExternalSyntheticLambda0.<init>():0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:5:java.lang.Object MatoChapterPayloadDto$$ExternalSyntheticLambda0.invoke():0:0 -> invoke
+      # {"id":"com.android.tools.r8.synthesized"}
+eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterPayloadDto$$serializer -> g:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterPayloadDto$$serializer INSTANCE -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lg;"}
+    8:24:void <clinit>():60:60 -> <clinit>
+    1:4:void <init>():60:60 -> <init>
+    4:86:eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterPayloadDto deserialize(kotlinx.serialization.encoding.Decoder):60:60 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lkotlinx/serialization/encoding/Decoder;)Li;"}
+    7:19:void serialize(kotlinx.serialization.encoding.Encoder,eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterPayloadDto):60:60 -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lkotlinx/serialization/encoding/Encoder;Li;)V"}
+    1:17:kotlinx.serialization.KSerializer[] childSerializers():60:60 -> childSerializers
+    1:5:java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder):60:60 -> deserialize
+    1:3:kotlinx.serialization.descriptors.SerialDescriptor getDescriptor():0:0 -> getDescriptor
+    1:6:void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object):60:60 -> serialize
+    1:5:kotlinx.serialization.KSerializer[] typeParametersSerializers():60:60 -> typeParametersSerializers
+eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterPayloadDto$Companion -> h:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    1:4:void <init>(kotlin.jvm.internal.DefaultConstructorMarker):0:0 -> <init>
+    5:5:void <init>():60:60 -> <init>
+    1:3:kotlinx.serialization.KSerializer serializer():60:60 -> serializer
+eu.kanade.tachiyomi.extension.vi.matodex.MatoDex -> eu.kanade.tachiyomi.extension.vi.matodex.MatoDex:
+# {"id":"sourceFile","fileName":"MatoDex.kt"}
+    java.lang.String name -> a
+    java.lang.String lang -> b
+    boolean supportsLatest -> c
+    java.lang.String baseUrl -> d
+    java.lang.String apiUrl -> e
+    okhttp3.OkHttpClient client -> f
+    1:3:void <init>():19:19 -> <init>
+    4:7:void <init>():21:21 -> <init>
+    8:11:void <init>():23:23 -> <init>
+    12:15:void <init>():27:27 -> <init>
+    16:38:void <init>():29:29 -> <init>
+    39:59:void <init>():31:31 -> <init>
+    60:63:void <init>():32:32 -> <init>
+    64:70:void <init>():33:33 -> <init>
+    1:20:boolean isMatoQuery(java.lang.String):85:85 -> a
+    21:27:boolean isMatoQuery(java.lang.String):86:86 -> a
+    28:37:boolean isMatoQuery(java.lang.String):87:87 -> a
+    38:41:boolean isMatoQuery(java.lang.String):88:88 -> a
+    42:57:boolean isMatoQuery(java.lang.String):123:123 -> a
+    58:73:boolean isMatoQuery(java.lang.String):124:124 -> a
+    74:80:boolean isMatoQuery(java.lang.String):88:88 -> a
+    81:94:boolean isMatoQuery(java.lang.String):89:89 -> a
+    4:7:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):37:37 -> chapterListParse
+    4:7:java.util.List chapterListParse(okhttp3.Response):69 -> chapterListParse
+    8:31:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):38:38 -> chapterListParse
+    8:31:java.util.List chapterListParse(okhttp3.Response):69 -> chapterListParse
+    32:34:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):37:37 -> chapterListParse
+    32:34:java.util.List chapterListParse(okhttp3.Response):69 -> chapterListParse
+    35:36:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):39:39 -> chapterListParse
+    35:36:java.util.List chapterListParse(okhttp3.Response):69 -> chapterListParse
+    37:47:java.util.List chapterListParse(okhttp3.Response):115:115 -> chapterListParse
+    48:61:java.util.List chapterListParse(okhttp3.Response):116:116 -> chapterListParse
+    62:63:java.util.List chapterListParse(okhttp3.Response):117:117 -> chapterListParse
+    64:67:java.util.List chapterListParse(okhttp3.Response):70:70 -> chapterListParse
+    68:71:java.util.List chapterListParse(okhttp3.Response):117:117 -> chapterListParse
+    72:82:java.util.List chapterListParse(okhttp3.Response):119:119 -> chapterListParse
+    83:88:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):37:37 -> chapterListParse
+    83:88:java.util.List chapterListParse(okhttp3.Response):69 -> chapterListParse
+    4:33:okhttp3.Request chapterListRequest(eu.kanade.tachiyomi.source.model.SManga):67:67 -> chapterListRequest
+    10:16:rx.Observable fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):50:50 -> fetchSearchManga
+    17:21:rx.Observable fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):54:54 -> fetchSearchManga
+    22:39:rx.Observable fetchSearchManga(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):51:51 -> fetchSearchManga
+    1:3:java.lang.String getBaseUrl():27:27 -> getBaseUrl
+    4:32:java.lang.String getChapterUrl(eu.kanade.tachiyomi.source.model.SChapter):73:73 -> getChapterUrl
+    1:3:okhttp3.OkHttpClient getClient():31:31 -> getClient
+    1:3:java.lang.String getLang():23:23 -> getLang
+    4:25:java.lang.String getMangaUrl(eu.kanade.tachiyomi.source.model.SManga):65:65 -> getMangaUrl
+    1:3:java.lang.String getName():21:21 -> getName
+    1:3:boolean getSupportsLatest():25:25 -> getSupportsLatest
+    1:4:okhttp3.Headers$Builder headersBuilder():35:35 -> headersBuilder
+    5:32:okhttp3.Headers$Builder headersBuilder():36:36 -> headersBuilder
+    4:9:java.lang.String imageUrlParse(okhttp3.Response):82:82 -> imageUrlParse
+    4:8:eu.kanade.tachiyomi.source.model.MangasPage latestUpdatesParse(okhttp3.Response):47:47 -> latestUpdatesParse
+    1:5:okhttp3.Request latestUpdatesRequest(int):45:45 -> latestUpdatesRequest
+    4:7:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):37:37 -> mangaDetailsParse
+    4:7:eu.kanade.tachiyomi.source.model.SManga mangaDetailsParse(okhttp3.Response):63 -> mangaDetailsParse
+    8:28:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):38:38 -> mangaDetailsParse
+    8:28:eu.kanade.tachiyomi.source.model.SManga mangaDetailsParse(okhttp3.Response):63 -> mangaDetailsParse
+    29:31:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):37:37 -> mangaDetailsParse
+    29:31:eu.kanade.tachiyomi.source.model.SManga mangaDetailsParse(okhttp3.Response):63 -> mangaDetailsParse
+    32:33:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):39:39 -> mangaDetailsParse
+    32:33:eu.kanade.tachiyomi.source.model.SManga mangaDetailsParse(okhttp3.Response):63 -> mangaDetailsParse
+    34:39:eu.kanade.tachiyomi.source.model.SManga mangaDetailsParse(okhttp3.Response):63:63 -> mangaDetailsParse
+    40:45:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):37:37 -> mangaDetailsParse
+    40:45:eu.kanade.tachiyomi.source.model.SManga mangaDetailsParse(okhttp3.Response):63 -> mangaDetailsParse
+    4:33:okhttp3.Request mangaDetailsRequest(eu.kanade.tachiyomi.source.model.SManga):61:61 -> mangaDetailsRequest
+    4:7:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):37:37 -> pageListParse
+    4:7:java.util.List pageListParse(okhttp3.Response):80 -> pageListParse
+    8:28:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):38:38 -> pageListParse
+    8:28:java.util.List pageListParse(okhttp3.Response):80 -> pageListParse
+    29:31:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):37:37 -> pageListParse
+    29:31:java.util.List pageListParse(okhttp3.Response):80 -> pageListParse
+    32:33:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):39:39 -> pageListParse
+    32:33:java.util.List pageListParse(okhttp3.Response):80 -> pageListParse
+    34:39:java.util.List pageListParse(okhttp3.Response):80:80 -> pageListParse
+    40:45:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):37:37 -> pageListParse
+    40:45:java.util.List pageListParse(okhttp3.Response):80 -> pageListParse
+    4:7:okhttp3.Request pageListRequest(eu.kanade.tachiyomi.source.model.SChapter):76:76 -> pageListRequest
+    8:45:okhttp3.Request pageListRequest(eu.kanade.tachiyomi.source.model.SChapter):77:77 -> pageListRequest
+    4:7:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):37:37 -> popularMangaParse
+    4:7:eu.kanade.tachiyomi.source.model.MangasPage popularMangaParse(okhttp3.Response):41 -> popularMangaParse
+    8:28:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):38:38 -> popularMangaParse
+    8:28:eu.kanade.tachiyomi.source.model.MangasPage popularMangaParse(okhttp3.Response):41 -> popularMangaParse
+    29:31:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):37:37 -> popularMangaParse
+    29:31:eu.kanade.tachiyomi.source.model.MangasPage popularMangaParse(okhttp3.Response):41 -> popularMangaParse
+    32:33:eu.kanade.tachiyomi.source.model.MangasPage popularMangaParse(okhttp3.Response):41:41 -> popularMangaParse
+    34:49:eu.kanade.tachiyomi.source.model.MangasPage popularMangaParse(okhttp3.Response):42:42 -> popularMangaParse
+    50:55:java.lang.Object keiyoushi.utils.JsonKt.parseAs$default(okhttp3.Response,kotlinx.serialization.json.Json,int,java.lang.Object):37:37 -> popularMangaParse
+    50:55:eu.kanade.tachiyomi.source.model.MangasPage popularMangaParse(okhttp3.Response):41 -> popularMangaParse
+    1:30:okhttp3.Request popularMangaRequest(int):38:38 -> popularMangaRequest
+    4:8:eu.kanade.tachiyomi.source.model.MangasPage searchMangaParse(okhttp3.Response):59:59 -> searchMangaParse
+    7:11:okhttp3.Request searchMangaRequest(int,java.lang.String,eu.kanade.tachiyomi.source.model.FilterList):57:57 -> searchMangaRequest
+eu.kanade.tachiyomi.extension.vi.matodex.MatoDex$$ExternalSyntheticNonNull0 -> j:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    1:6:boolean MatoDex$$ExternalSyntheticNonNull0.m(java.lang.Object):0:0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+eu.kanade.tachiyomi.extension.vi.matodex.MatoDex$chapterListParse$$inlined$sortedByDescending$1 -> k:
+# {"id":"sourceFile","fileName":"Comparisons.kt"}
+    1:4:void <init>():0:0 -> <init>
+    1:2:int compare(java.lang.Object,java.lang.Object):121:121 -> compare
+    3:10:int compare(java.lang.Object,java.lang.Object):329:329 -> compare
+    11:12:int compare(java.lang.Object,java.lang.Object):121:121 -> compare
+    13:20:int compare(java.lang.Object,java.lang.Object):329:329 -> compare
+    21:25:int compare(java.lang.Object,java.lang.Object):121:121 -> compare
+eu.kanade.tachiyomi.extension.vi.matodex.MatoDexKt -> l:
+# {"id":"sourceFile","fileName":"MatoDex.kt"}
+    java.util.List directSearchAliases -> a
+    1:2:void <clinit>():102:102 -> <clinit>
+    3:24:void <clinit>():103:103 -> <clinit>
+    25:31:void <clinit>():93:93 -> <clinit>
+    1:3:java.util.List access$getDirectSearchAliases$p():1:1 -> a
+eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto -> p:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto$Companion Companion -> Companion
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lo;"}
+    java.lang.String title -> a
+    java.util.List altTitles -> b
+    java.lang.String cover -> c
+    java.lang.String status -> d
+    java.lang.String description -> e
+    int chapterCount -> f
+    kotlin.Lazy[] $childSerializers -> g
+    9:43:void <clinit>():15:15 -> <clinit>
+    1:1:void <init>(int,java.lang.String,java.util.List,java.lang.String,java.lang.String,java.lang.String,int,kotlinx.serialization.internal.SerializationConstructorMarker):15:15 -> <init>
+    2:2:void <init>(int,java.lang.String,java.util.List,java.lang.String,java.lang.String,java.lang.String,int,kotlinx.serialization.internal.SerializationConstructorMarker):18:18 -> <init>
+    3:3:void <init>(int,java.lang.String,java.util.List,java.lang.String,java.lang.String,java.lang.String,int,kotlinx.serialization.internal.SerializationConstructorMarker):15:15 -> <init>
+    1:5:kotlinx.serialization.KSerializer MatoInfoDto.$r8$lambda$Z2zfTm6JgsV8PpvlVC2puV3Q7J8():0:0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:8:kotlinx.serialization.KSerializer MatoInfoDto._childSerializers$_anonymous_():0:0 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:3:kotlin.Lazy[] access$get$childSerializers$cp():15:15 -> c
+    1:6:eu.kanade.tachiyomi.source.model.SManga toSManga():24:24 -> d
+    7:11:eu.kanade.tachiyomi.source.model.SManga toSManga():25:25 -> d
+    12:16:eu.kanade.tachiyomi.source.model.SManga toSManga():26:26 -> d
+    17:21:eu.kanade.tachiyomi.source.model.SManga toSManga():27:27 -> d
+    22:26:eu.kanade.tachiyomi.source.model.SManga toSManga():28:28 -> d
+    27:31:eu.kanade.tachiyomi.source.model.SManga toSManga():29:29 -> d
+    32:39:eu.kanade.tachiyomi.source.model.SManga toSManga():30:30 -> d
+    40:76:eu.kanade.tachiyomi.source.model.SManga toSManga():31:31 -> d
+    77:81:eu.kanade.tachiyomi.source.model.SManga toSManga():33:33 -> d
+    82:100:eu.kanade.tachiyomi.source.model.SManga toSManga():34:34 -> d
+    101:107:eu.kanade.tachiyomi.source.model.SManga toSManga():29:29 -> d
+    108:109:eu.kanade.tachiyomi.source.model.SManga toSManga():36:36 -> d
+    110:120:eu.kanade.tachiyomi.source.model.SManga toSManga():37:37 -> d
+    121:131:eu.kanade.tachiyomi.source.model.SManga toSManga():38:38 -> d
+    132:134:eu.kanade.tachiyomi.source.model.SManga toSManga():36:36 -> d
+    135:138:eu.kanade.tachiyomi.source.model.SManga toSManga():41:41 -> d
+    1:1:void write$Self$matodex(eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto,kotlinx.serialization.encoding.CompositeEncoder,kotlinx.serialization.descriptors.SerialDescriptor):15:15 -> e
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lp;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V"}
+    2:2:void write$Self$matodex(eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto,kotlinx.serialization.encoding.CompositeEncoder,kotlinx.serialization.descriptors.SerialDescriptor):18:18 -> e
+    3:3:void write$Self$matodex(eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto,kotlinx.serialization.encoding.CompositeEncoder,kotlinx.serialization.descriptors.SerialDescriptor):15:15 -> e
+eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto$$ExternalSyntheticLambda0 -> m:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    1:4:void MatoInfoDto$$ExternalSyntheticLambda0.<init>():0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:5:java.lang.Object MatoInfoDto$$ExternalSyntheticLambda0.invoke():0:0 -> invoke
+      # {"id":"com.android.tools.r8.synthesized"}
+eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto$$serializer -> n:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto$$serializer INSTANCE -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Ln;"}
+    8:50:void <clinit>():15:15 -> <clinit>
+    1:4:void <init>():15:15 -> <init>
+    4:188:eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto deserialize(kotlinx.serialization.encoding.Decoder):15:15 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lkotlinx/serialization/encoding/Decoder;)Lp;"}
+    7:19:void serialize(kotlinx.serialization.encoding.Encoder,eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto):15:15 -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lkotlinx/serialization/encoding/Encoder;Lp;)V"}
+    1:36:kotlinx.serialization.KSerializer[] childSerializers():15:15 -> childSerializers
+    1:5:java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder):15:15 -> deserialize
+    1:3:kotlinx.serialization.descriptors.SerialDescriptor getDescriptor():0:0 -> getDescriptor
+    1:6:void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object):15:15 -> serialize
+    1:5:kotlinx.serialization.KSerializer[] typeParametersSerializers():15:15 -> typeParametersSerializers
+eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto$Companion -> o:
+# {"id":"sourceFile","fileName":"Dto.kt"}
+    1:4:void <init>(kotlin.jvm.internal.DefaultConstructorMarker):0:0 -> <init>
+    5:5:void <init>():15:15 -> <init>
+    1:3:kotlinx.serialization.KSerializer serializer():15:15 -> serializer
+keiyoushi.network.RateLimitBuilder -> q:
+# {"id":"sourceFile","fileName":"RateLimit.kt"}
+    okhttp3.OkHttpClient$Builder base -> a
+    java.util.List rules -> b
+    7:9:void <init>(okhttp3.OkHttpClient$Builder,java.util.List):18:18 -> <init>
+    10:11:void <init>(okhttp3.OkHttpClient$Builder,java.util.List):19:19 -> <init>
+    12:14:void <init>(okhttp3.OkHttpClient$Builder,java.util.List):20:20 -> <init>
+    1:2:okhttp3.OkHttpClient build():39:39 -> a
+    3:8:okhttp3.OkHttpClient build():40:40 -> a
+    9:19:okhttp3.OkHttpClient build():41:41 -> a
+    20:24:okhttp3.OkHttpClient build():42:42 -> a
+keiyoushi.network.RateLimitInterceptor -> u:
+# {"id":"sourceFile","fileName":"RateLimit.kt"}
+    java.util.List rateLimits -> a
+    4:6:void <init>(java.util.List):79:79 -> <init>
+    7:17:void <init>(java.util.List):163:163 -> <init>
+    18:31:void <init>(java.util.List):164:164 -> <init>
+    32:33:void <init>(java.util.List):165:165 -> <init>
+    34:55:void <init>(java.util.List):109:109 -> <init>
+    56:59:void <init>(java.util.List):165:165 -> <init>
+    60:62:void <init>(java.util.List):109:109 -> <init>
+    1:1:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):132:132 -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lr;Lokhttp3/Call;)V"}
+    2:5:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):134:137 -> a
+    6:7:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):140:141 -> a
+    8:8:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):143:143 -> a
+    9:10:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):145:146 -> a
+    11:11:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):148:148 -> a
+    12:12:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):150:150 -> a
+    13:16:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):152:155 -> a
+    17:17:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):160:160 -> a
+    18:18:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):132:132 -> a
+    19:19:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):158:158 -> a
+    20:20:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):134:134 -> a
+    21:21:void acquireSlot(keiyoushi.network.RateLimitInterceptor$RateLimit,okhttp3.Call):132:132 -> a
+    4:7:okhttp3.Response intercept(okhttp3.Interceptor$Chain):112:112 -> intercept
+    8:11:okhttp3.Response intercept(okhttp3.Interceptor$Chain):113:113 -> intercept
+    12:17:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115:115 -> intercept
+    18:19:okhttp3.Response intercept(okhttp3.Interceptor$Chain):117:117 -> intercept
+    20:36:okhttp3.Response intercept(okhttp3.Interceptor$Chain):167:167 -> intercept
+    37:62:okhttp3.Response intercept(okhttp3.Interceptor$Chain):117:117 -> intercept
+    63:67:okhttp3.Response intercept(okhttp3.Interceptor$Chain):118:118 -> intercept
+    68:78:okhttp3.Response intercept(okhttp3.Interceptor$Chain):120:120 -> intercept
+    79:84:okhttp3.Response intercept(okhttp3.Interceptor$Chain):122:122 -> intercept
+    85:89:okhttp3.Response intercept(okhttp3.Interceptor$Chain):123:123 -> intercept
+    90:94:okhttp3.Response intercept(okhttp3.Interceptor$Chain):126:126 -> intercept
+    95:97:okhttp3.Response intercept(okhttp3.Interceptor$Chain):127:127 -> intercept
+    98:102:okhttp3.Response intercept(okhttp3.Interceptor$Chain):129:129 -> intercept
+    103:110:okhttp3.Response intercept(okhttp3.Interceptor$Chain):115:115 -> intercept
+keiyoushi.network.RateLimitInterceptor$RateLimit -> r:
+# {"id":"sourceFile","fileName":"RateLimit.kt"}
+    int permits -> a
+    long period -> b
+    long interval -> c
+    kotlin.jvm.functions.Function1 shouldLimit -> d
+    java.util.ArrayDeque queue -> e
+    java.util.concurrent.locks.ReentrantLock lock -> f
+    java.util.concurrent.locks.Condition retryCondition -> g
+    kotlin.time.Duration lastDispatchTime -> h
+    1:5:void <init>(int,long,long,kotlin.jvm.functions.Function1):97:101 -> <init>
+    6:8:void <init>(int,long,long,kotlin.jvm.functions.Function1):103:105 -> <init>
+    9:9:void <init>(int,long,long,kotlin.jvm.functions.Function1,kotlin.jvm.internal.DefaultConstructorMarker):0:0 -> <init>
+    1:3:long getInterval-UwyO8pc():100:100 -> a
+    1:3:kotlin.time.Duration getLastDispatchTime-FghU774():106:106 -> b
+    1:3:java.util.concurrent.locks.ReentrantLock getLock():104:104 -> c
+    1:3:long getPeriod-UwyO8pc():99:99 -> d
+    1:3:int getPermits():98:98 -> e
+    1:3:java.util.ArrayDeque getQueue():103:103 -> f
+    1:3:java.util.concurrent.locks.Condition getRetryCondition():105:105 -> g
+    1:3:kotlin.jvm.functions.Function1 getShouldLimit():101:101 -> h
+    1:3:void setLastDispatchTime-BwNAW2A(kotlin.time.Duration):106:106 -> i
+keiyoushi.network.RateLimitInterceptor$RateLimitTag -> s:
+# {"id":"sourceFile","fileName":"RateLimit.kt"}
+    boolean rateLimitApplied -> a
+    6:9:void <init>(boolean,int,kotlin.jvm.internal.DefaultConstructorMarker):83:83 -> <init>
+    10:11:void <init>(boolean):83:84 -> <init>
+    1:3:boolean getRateLimitApplied():84:84 -> a
+    1:3:void setRateLimitApplied(boolean):84:84 -> b
+keiyoushi.network.RateLimitInterceptor$TaggingInterceptor -> t:
+# {"id":"sourceFile","fileName":"RateLimit.kt"}
+    keiyoushi.network.RateLimitInterceptor$TaggingInterceptor INSTANCE -> a
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lt;"}
+    1:8:void <clinit>():0:0 -> <clinit>
+    1:4:void <init>():87:87 -> <init>
+    4:11:okhttp3.Response intercept(okhttp3.Interceptor$Chain):89:89 -> intercept
+    12:25:okhttp3.Response intercept(okhttp3.Interceptor$Chain):90:90 -> intercept
+    26:29:okhttp3.Response intercept(okhttp3.Interceptor$Chain):91:91 -> intercept
+    30:34:okhttp3.Response intercept(okhttp3.Interceptor$Chain):93:93 -> intercept
+keiyoushi.network.RateLimitKt -> w:
+# {"id":"sourceFile","fileName":"RateLimit.kt"}
+    1:5:boolean rateLimit_ck1zr5g$lambda$0(okhttp3.HttpUrl):0:0 -> a
+    1:1:keiyoushi.network.RateLimitBuilder rateLimit-ck1zr5g(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1):70:70 -> b
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lokhttp3/OkHttpClient$Builder;IJJLkotlin/jvm/functions/Function1;)Lq;"}
+    1:3:keiyoushi.network.RateLimitBuilder rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):67:69 -> c
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Lokhttp3/OkHttpClient$Builder;IJJLkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lq;"}
+    4:4:keiyoushi.network.RateLimitBuilder rateLimit-ck1zr5g$default(okhttp3.OkHttpClient$Builder,int,long,long,kotlin.jvm.functions.Function1,int,java.lang.Object):65:65 -> c
+keiyoushi.network.RateLimitKt$$ExternalSyntheticLambda0 -> v:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    1:4:void RateLimitKt$$ExternalSyntheticLambda0.<init>():0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:11:java.lang.Object RateLimitKt$$ExternalSyntheticLambda0.invoke(java.lang.Object):0:0 -> invoke
+      # {"id":"com.android.tools.r8.synthesized"}
+keiyoushi.network.RateLimitRule -> x:
+# {"id":"sourceFile","fileName":"RateLimit.kt"}
+    int permits -> a
+    long period -> b
+    long interval -> c
+    kotlin.jvm.functions.Function1 shouldLimit -> d
+    1:5:void <init>(int,long,long,kotlin.jvm.functions.Function1):72:76 -> <init>
+    6:6:void <init>(int,long,long,kotlin.jvm.functions.Function1,kotlin.jvm.internal.DefaultConstructorMarker):0:0 -> <init>
+    1:3:long getInterval-UwyO8pc():75:75 -> a
+    1:3:long getPeriod-UwyO8pc():74:74 -> b
+    1:3:int getPermits():73:73 -> c
+    1:3:kotlin.jvm.functions.Function1 getShouldLimit():76:76 -> d
+keiyoushi.utils.ContextKt$special$$inlined$get$1 -> keiyoushi.utils.ContextKt$special$$inlined$get$1:
+# {"id":"sourceFile","fileName":"TypeInfo.kt"}
+keiyoushi.utils.DateKt -> a:
+# {"id":"sourceFile","fileName":"Date.kt"}
+    9:26:long tryParse(java.text.SimpleDateFormat,java.lang.String):9:9 -> a
+keiyoushi.utils.JsonKt -> keiyoushi.utils.a:
+# {"id":"sourceFile","fileName":"Json.kt"}
+    kotlinx.serialization.json.Json jsonInstance -> a
+    okhttp3.MediaType JSON_MEDIA_TYPE -> b
+    1:4:void <clinit>():17:17 -> <clinit>
+    5:9:void <clinit>():95:95 -> <clinit>
+    10:19:void <clinit>():94:94 -> <clinit>
+    20:21:void <clinit>():17:17 -> <clinit>
+    22:32:void <clinit>():19:19 -> <clinit>
+    1:3:void <clinit>():17:17 -> a
+    1:3:kotlinx.serialization.json.Json getJsonInstance():17 -> a
+keiyoushi.utils.JsonKt$special$$inlined$get$1 -> keiyoushi.utils.JsonKt$special$$inlined$get$1:
+# {"id":"sourceFile","fileName":"TypeInfo.kt"}
+    1:4:void <init>():27:27 -> <init>
+keiyoushi.utils.ProtobufKt$special$$inlined$get$1 -> keiyoushi.utils.ProtobufKt$special$$inlined$get$1:
+# {"id":"sourceFile","fileName":"TypeInfo.kt"}

@@ -1,0 +1,17 @@
+keiyoushi.utils.ProtobufKt$special$$inlined$get$1
+eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterDto
+eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto
+keiyoushi.utils.ContextKt$special$$inlined$get$1
+eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterPayloadDto
+eu.kanade.tachiyomi.extension.vi.matodex.MatoDex
+keiyoushi.utils.JsonKt$special$$inlined$get$1
+eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterPayloadDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor descriptor
+eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto: eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto$Companion Companion
+eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterDto: eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterDto$Companion Companion
+eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor descriptor
+eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterPayloadDto: eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterPayloadDto$Companion Companion
+eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor descriptor
+eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterPayloadDto$Companion: kotlinx.serialization.KSerializer serializer()
+eu.kanade.tachiyomi.extension.vi.matodex.MatoDex: MatoDex()
+eu.kanade.tachiyomi.extension.vi.matodex.MatoInfoDto$Companion: kotlinx.serialization.KSerializer serializer()
+eu.kanade.tachiyomi.extension.vi.matodex.MatoChapterDto$Companion: kotlinx.serialization.KSerializer serializer()

@@ -1,0 +1,42 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="eu.kanade.tachiyomi.extension.vi.matodex"
+4    android:versionCode="1"
+5    android:versionName="1.4.1" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="21"
+8-->INJECTED
+9        android:targetSdkVersion="34" />
+9-->INJECTED
+10
+11    <uses-feature android:name="tachiyomi.extension" />
+11-->[:core] /home/runner/work/extensions-source/extensions-source/core/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:7:5-56
+11-->[:core] /home/runner/work/extensions-source/extensions-source/core/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:7:19-53
+12
+13    <application
+13-->INJECTED
+14        android:allowBackup="false"
+14-->[:core] /home/runner/work/extensions-source/extensions-source/core/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:10:9-36
+15        android:extractNativeLibs="true"
+15-->INJECTED
+16        android:icon="@mipmap/ic_launcher"
+16-->[:core] /home/runner/work/extensions-source/extensions-source/core/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:11:9-43
+17        android:label="Tachiyomi: MatoDex" >
+17-->[:core] /home/runner/work/extensions-source/extensions-source/core/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:12:9-35
+18        <meta-data
+18-->[:core] /home/runner/work/extensions-source/extensions-source/core/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:13:9-15:43
+19            android:name="tachiyomi.extension.class"
+19-->[:core] /home/runner/work/extensions-source/extensions-source/core/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:14:13-53
+20            android:value=".MatoDex" />
+20-->[:core] /home/runner/work/extensions-source/extensions-source/core/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:15:13-40
+21        <meta-data
+21-->[:core] /home/runner/work/extensions-source/extensions-source/core/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:16:9-18:39
+22            android:name="tachiyomi.extension.nsfw"
+22-->[:core] /home/runner/work/extensions-source/extensions-source/core/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:17:13-52
+23            android:value="0" />
+23-->[:core] /home/runner/work/extensions-source/extensions-source/core/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:18:13-36
+24    </application>
+25
+26</manifest>
