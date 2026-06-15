@@ -66,11 +66,9 @@ class MatoDex : HttpSource() {
 
     override fun chapterListRequest(manga: SManga): Request = GET("$apiUrl/chapters.json", headers)
 
-    override fun chapterListParse(response: Response): List<SChapter> {
-        return response.parseAs<List<MatoChapterDto>>()
-            .map { it.toSChapter() }
-            .sortedByDescending { it.chapter_number }
-    }
+    override fun chapterListParse(response: Response): List<SChapter> = response.parseAs<List<MatoChapterDto>>()
+        .map { it.toSChapter() }
+        .sortedByDescending { it.chapter_number }
 
     override fun getChapterUrl(chapter: SChapter): String = "$baseUrl/read/${chapter.url}"
 
@@ -79,9 +77,7 @@ class MatoDex : HttpSource() {
         return GET("$apiUrl/chapters/$chapterId.json", headers)
     }
 
-    override fun pageListParse(response: Response): List<Page> {
-        return response.parseAs<MatoChapterPayloadDto>().toPages()
-    }
+    override fun pageListParse(response: Response): List<Page> = response.parseAs<MatoChapterPayloadDto>().toPages()
 
     override fun imageUrlParse(response: Response): String = throw UnsupportedOperationException()
 
